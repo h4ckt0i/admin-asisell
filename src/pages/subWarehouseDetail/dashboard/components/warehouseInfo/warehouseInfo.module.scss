@@ -1,0 +1,25 @@
+@import "../../../../../styles/variables";
+
+.container {
+  .content {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: $second-chart-color;
+
+    .item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      .icon {
+        margin-right: 1rem;
+      }
+
+      .text {
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

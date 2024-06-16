@@ -1,0 +1,10 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .text {
+    flex: 1;
+    text-align: left;
+  }
+}

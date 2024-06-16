@@ -1,0 +1,54 @@
+@import "../../styles/variables";
+
+.container {
+  border-radius: 2rem;
+  border: solid 0.1rem $border-color;
+  overflow: hidden;
+
+  .inputContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    border-radius: 1rem;
+    background: #fff;
+
+    .searchBtn {
+      padding: 0;
+
+      .searchIcon {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+
+    .loading,
+    .clear {
+      color: #9b9595;
+      font-size: 1.8rem;
+      line-height: 0;
+      padding: 0;
+    }
+
+    .loading {
+      cursor: default;
+      animation: spinner 0.8s linear infinite;
+    }
+  }
+
+  .list {
+    width: 60vw;
+    height: 50rem;
+    padding: 1rem;
+    overflow: overlay;
+  }
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

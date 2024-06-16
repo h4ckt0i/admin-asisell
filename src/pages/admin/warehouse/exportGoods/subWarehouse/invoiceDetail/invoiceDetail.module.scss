@@ -1,0 +1,16 @@
+@import "../../../../../../styles/variables";
+
+.exportBtn {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-weight: 600;
+  color: #0f3659;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+  border: solid 0.1rem #0f3659;
+
+  span {
+    transform: translateY(10%);
+  }
+}

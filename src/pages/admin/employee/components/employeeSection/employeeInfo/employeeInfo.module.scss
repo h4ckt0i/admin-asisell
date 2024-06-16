@@ -1,0 +1,40 @@
+@import "../../../../../../styles/variables";
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: solid 0.1rem $border-color;
+
+  .avatar {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+  }
+
+  .info {
+    flex: 1;
+    margin-left: 1rem;
+
+    .name {
+      font-weight: 600;
+    }
+
+    .infoSection {
+      display: flex;
+      align-items: center;
+
+      margin: 0.3rem 0;
+
+      .icon {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+
+      .text {
+        flex: 1;
+        margin-left: 0.3rem;
+      }
+    }
+  }
+}

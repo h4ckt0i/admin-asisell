@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: $primary-background-color;
+
+  .content {
+    display: flex;
+    align-items: center;
+
+    .loginBtn {
+      margin-left: 6rem;
+    }
+  }
+}

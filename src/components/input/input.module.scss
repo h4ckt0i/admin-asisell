@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  overflow: hidden;
+
+  .input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 1rem;
+    font-size: 1.4rem;
+    border: none;
+    background: transparent;
+    outline: none;
+
+    &::placeholder {
+      font-size: 1.5rem;
+    }
+  }
+
+  .icon {
+    width: 2rem;
+  }
+
+  .leftIconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .rightIconContainer {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.errorBorder {
+  border: solid 0.2rem red;
+}

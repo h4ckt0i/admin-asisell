@@ -1,0 +1,13 @@
+@import "../../../../../../styles/variables";
+
+.userNameContainer {
+  display: flex;
+  align-items: center;
+
+  .avatar {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+  }
+}

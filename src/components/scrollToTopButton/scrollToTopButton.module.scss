@@ -1,0 +1,57 @@
+@import "../../styles/variables";
+
+.container {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 10;
+  animation: containerFadeIn 0.5s ease forwards;
+  will-change: opacity;
+
+  .btn {
+    color: $primary-color;
+    line-height: 0;
+    font-size: 4rem;
+    padding: 0;
+    animation: btnFadeIn 0.5s ease;
+    will-change: transform;
+  }
+
+  .hideBtn {
+    animation: btnFadeOut 0.5s ease;
+  }
+}
+
+.hideContainer {
+  animation: containerFadeOut 0.5s ease forwards;
+}
+
+@keyframes btnFadeIn {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes btnFadeOut {
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes containerFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes containerFadeOut {
+  100% {
+    opacity: 0;
+  }
+}

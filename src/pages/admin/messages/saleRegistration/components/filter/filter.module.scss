@@ -1,0 +1,30 @@
+@import "../../../../../../styles/variables";
+
+.container {
+  .header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: solid 0.1rem $border-color;
+
+    .headerIcon {
+      width: 1.5rem;
+      margin-right: 1rem;
+    }
+
+    .title {
+      font-size: 1.4rem;
+      margin: 0;
+    }
+  }
+
+  .selection {
+    width: 100%;
+    margin-bottom: 0;
+
+    span,
+    div {
+      font-size: 1.4rem;
+    }
+  }
+}

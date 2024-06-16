@@ -1,0 +1,16 @@
+@import "../../../styles/variables";
+
+.container {
+  .profile {
+    white-space: nowrap;
+    color: $gray-color;
+    font-size: 1.4rem;
+
+    .avatar {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+    }
+  }
+}

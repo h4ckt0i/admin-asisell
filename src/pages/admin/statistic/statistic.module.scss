@@ -1,0 +1,40 @@
+@import "../../../styles/variables";
+
+.container {
+  .content {
+    .partTwo {
+      display: flex;
+      margin: 2rem 0;
+    }
+
+    .partThree {
+      display: flex;
+      justify-content: space-between;
+
+      .monthlySales {
+        flex: 1;
+        margin-right: 2rem;
+      }
+    }
+
+    .partFour {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 2rem;
+
+      .partFourChild {
+        width: 40%;
+
+        &:nth-child(2) {
+          margin: 0 2rem;
+        }
+
+        &:last-child {
+          width: 20%;
+        }
+      }
+    }
+  }
+}

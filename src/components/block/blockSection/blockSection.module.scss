@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    width: 14rem;
+    max-height: 20rem;
+    margin-right: 2rem;
+  }
+}

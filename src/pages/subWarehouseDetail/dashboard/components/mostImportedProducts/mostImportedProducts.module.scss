@@ -1,0 +1,25 @@
+.progressContainer {
+  flex: 1;
+  margin-left: 2rem;
+
+  .progressBarContainer {
+    margin-top: 1rem;
+
+    .progressBar {
+      .progressTitleContainer {
+        display: flex;
+        justify-content: space-between;
+
+        .progressTitle {
+          width: 60%;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          visibility: visible;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}

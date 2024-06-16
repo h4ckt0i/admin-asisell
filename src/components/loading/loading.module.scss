@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $modal-background-color;
+  z-index: 200;
+
+  .imgContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $white-color;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -0.4rem;
+      left: -0.4rem;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      border: 0.4rem solid transparent;
+      border-right-color: $primary-color;
+      animation: circleLoading 1s forwards infinite linear;
+    }
+
+    .img {
+      width: 90%;
+    }
+  }
+}
+
+@keyframes circleLoading {
+  to {
+    transform: rotate(360deg);
+  }
+}

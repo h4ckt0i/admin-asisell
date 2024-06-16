@@ -1,0 +1,13 @@
+@import "../../styles/variables";
+
+.container {
+  .contentContainer {
+    width: 70rem;
+    max-height: 70%;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background: $white-color;
+    overflow: hidden;
+  }
+}

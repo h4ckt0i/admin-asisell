@@ -1,0 +1,28 @@
+@import "../../../../styles/variables";
+
+.container {
+  .content {
+    .partOne {
+      display: flex;
+      align-items: flex-start;
+
+      .filter {
+        width: 20%;
+      }
+
+      .blockSection {
+        flex: 1;
+        margin: 0 2rem;
+      }
+    }
+
+    .partTwo {
+      display: flex;
+      margin: 2rem 0;
+    }
+
+    .table {
+      margin-top: 2rem;
+    }
+  }
+}

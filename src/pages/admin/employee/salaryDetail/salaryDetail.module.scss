@@ -1,0 +1,23 @@
+@import "../../../../styles/variables";
+
+.container {
+  .content {
+    .partOne {
+      display: flex;
+      align-items: flex-start;
+
+      .filter {
+        width: 20%;
+      }
+
+      .positionsChart {
+        flex: 1;
+        margin: 0 2rem;
+      }
+    }
+
+    .employeeSection {
+      margin: 2rem 0;
+    }
+  }
+}

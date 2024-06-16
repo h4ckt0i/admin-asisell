@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+
+    .inputBody {
+      align-self: stretch;
+    }
+
+    .btn {
+      margin-top: 1rem;
+    }
+
+    .icon {
+      width: 2.5rem;
+    }
+
+    .inputSection {
+      & > span {
+        width: 20%;
+      }
+    }
+  }
+}

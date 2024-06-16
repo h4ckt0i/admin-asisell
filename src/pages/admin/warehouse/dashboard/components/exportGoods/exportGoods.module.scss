@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+
+  .chartSection {
+    width: 50%;
+
+    &:first-child {
+      margin-right: 2rem;
+      .content {
+        .list {
+          margin-top: 2rem;
+
+          .textItem {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+
+            .iconContainer {
+              padding: 1rem;
+              border-radius: 1rem;
+            }
+
+            .labelContainer {
+              display: flex;
+              justify-content: space-between;
+              width: 50%;
+              margin-left: 1rem;
+
+              .label {
+                display: inline-block;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

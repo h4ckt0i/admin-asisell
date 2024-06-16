@@ -1,0 +1,20 @@
+@import "../../../../styles/variables";
+
+.mainInfo {
+  .textSection {
+    margin-bottom: 2rem;
+
+    .textTitle {
+      display: inline-block;
+      min-width: 20%;
+    }
+  }
+
+  .code {
+    span {
+      &:last-child {
+        color: $primary-color;
+      }
+    }
+  }
+}

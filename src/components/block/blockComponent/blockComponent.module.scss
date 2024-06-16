@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 2rem;
+
+    .number {
+      display: inline-block;
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .title {
+      font-size: 1.4rem;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+
+  .pagination {
+    display: flex;
+
+    .page-item {
+      border-radius: 0.4rem;
+    }
+
+    .page-link {
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .page-btn {
+      .page-link {
+        color: $gray-color;
+      }
+    }
+
+    .active {
+      background-color: $primary-color;
+
+      .page-link {
+        color: $white-color;
+      }
+    }
+  }
+}

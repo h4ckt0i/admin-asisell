@@ -1,0 +1,14 @@
+@import "../../../../styles/variables";
+
+.container {
+  .content {
+    .partTwo {
+      display: flex;
+      margin: 2rem 0;
+
+      .partTwoChild {
+        width: calc(100% / 2);
+      }
+    }
+  }
+}

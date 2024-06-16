@@ -1,0 +1,15 @@
+@import "../../../styles/variables";
+
+.container {
+  .text {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+
+  .subText {
+    font-size: 1.3rem;
+    color: $gray-color;
+  }
+}

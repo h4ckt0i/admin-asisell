@@ -1,0 +1,27 @@
+@import "../../../../styles/variables";
+
+.container {
+  .content {
+    .totalContainer {
+      display: flex;
+      justify-content: space-between;
+
+      .total {
+        width: calc(100% / 2);
+
+        &:first-child {
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    .partTwo {
+      display: flex;
+      margin: 2rem 0;
+
+      .filter {
+        flex: 1;
+      }
+    }
+  }
+}

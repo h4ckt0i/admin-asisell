@@ -1,0 +1,17 @@
+.container {
+  .title {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  .icon {
+    width: 1.5rem;
+  }
+
+  .promotion {
+    .title {
+      font-style: italic;
+      font-weight: 600;
+    }
+  }
+}

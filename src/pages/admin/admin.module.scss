@@ -1,0 +1,12 @@
+@import "../../styles/variables";
+
+.container {
+  .bodyContainer {
+    display: flex;
+    padding: 0;
+
+    .content {
+      flex: 1;
+    }
+  }
+}

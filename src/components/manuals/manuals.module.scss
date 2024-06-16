@@ -1,0 +1,52 @@
+@import "../../styles/variables";
+
+.container {
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      transition: height 0.2s linear;
+
+      .titleContainer {
+        display: flex;
+        align-items: center;
+        align-self: flex-start;
+        margin-top: 1rem;
+
+        .title {
+          font-size: 1.8rem;
+          font-weight: 600;
+          color: $primary-color;
+        }
+
+        .titleIcon {
+          line-height: 0;
+          margin-left: 1rem;
+          color: $primary-color;
+        }
+      }
+
+      .subTitle {
+        font-weight: 600;
+      }
+
+      .contentItem {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .contentHeight {
+    height: 100%;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}

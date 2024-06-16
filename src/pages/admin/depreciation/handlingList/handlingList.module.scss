@@ -1,0 +1,27 @@
+@import "../../../../styles/variables";
+
+.container {
+  .content {
+    .partOne {
+      display: flex;
+      align-items: flex-start;
+
+      .filter {
+        width: 20%;
+      }
+
+      .chart {
+        max-width: calc(100% / 2);
+        margin: 0 2rem;
+      }
+    }
+
+    .briefInfo {
+      margin: 2rem 0;
+    }
+
+    .table {
+      margin: 2rem 0;
+    }
+  }
+}

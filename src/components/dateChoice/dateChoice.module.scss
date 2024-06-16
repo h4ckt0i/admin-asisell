@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+
+.container {
+  position: relative;
+
+  .icon {
+    font-size: 1.7rem;
+    color: #808191;
+  }
+
+  .birthdayBtn {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    display: flex;
+    justify-content: flex-end;
+    width: 82%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    z-index: 1;
+  }
+
+  .calendar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 20;
+  }
+
+  .hideCalendar {
+    display: none;
+  }
+}

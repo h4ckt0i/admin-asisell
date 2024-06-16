@@ -1,0 +1,18 @@
+.container {
+  .content {
+    .search {
+      margin: 0;
+    }
+
+    .searchAndFilter {
+      display: flex;
+      align-items: flex-end;
+      width: 100%;
+      margin: 2rem 0;
+
+      .search {
+        margin-left: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import "../../../../../styles/variables";
+
+.container {
+  .icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .content {
+    background-image: linear-gradient(-135deg, #5bc6ff, #08a9ff);
+    padding: 1rem;
+    border-radius: 1rem;
+
+    .textContainer {
+      display: flex;
+      flex-direction: column;
+      color: $white-color;
+      margin-top: 1rem;
+
+      .number {
+        color: #ffcf00;
+      }
+
+      .duration {
+        display: inline-block;
+        margin: 1rem 0;
+      }
+
+      .percentage {
+        span {
+          font-size: 1.8rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

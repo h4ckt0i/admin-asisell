@@ -1,0 +1,13 @@
+.container {
+  width: 60%;
+
+  .revenue {
+    display: flex;
+    flex-direction: column;
+
+    .revenueText {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+}

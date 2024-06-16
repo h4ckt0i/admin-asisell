@@ -1,0 +1,33 @@
+@import "../../../styles/variables";
+
+.container {
+  .content {
+    .totalContainer {
+      display: flex;
+      justify-content: space-between;
+
+      .total {
+        width: calc(100% / 3);
+
+        &:nth-child(2) {
+          margin: 0 2rem;
+        }
+      }
+    }
+
+    .partTwo {
+      display: flex;
+      margin: 2rem 0;
+    }
+
+    .partFour {
+      display: flex;
+      width: 100%;
+      margin-top: 2rem;
+
+      .members {
+        width: 20%;
+      }
+    }
+  }
+}

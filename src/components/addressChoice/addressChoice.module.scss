@@ -1,0 +1,17 @@
+.container {
+  .addressSection {
+    display: flex;
+
+    .addressInput {
+      width: calc(100% / 3);
+
+      &:nth-child(2) {
+        margin: 0 2rem;
+      }
+    }
+  }
+
+  .textArea {
+    width: 100%;
+  }
+}

@@ -1,0 +1,116 @@
+@import "../../styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  height: 100vh;
+  padding: 1rem 2rem 0;
+  background-color: $white-color;
+  overflow: hidden;
+
+  .logo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow-y: overlay;
+
+    .topList {
+      .item {
+        position: relative;
+        width: 100%;
+        font-size: 1.4rem;
+        color: $gray-color;
+        padding: 1rem;
+        margin-bottom: 1rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        i {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+        }
+
+        .icon {
+          margin-right: 1rem;
+        }
+      }
+
+      .child {
+        padding-left: 3rem;
+      }
+
+      .noneChild {
+        display: none;
+      }
+
+      .parentActivated {
+        color: $primary-color;
+
+        .icon {
+          path,
+          rect {
+            fill: $primary-color;
+          }
+        }
+      }
+
+      .itemActivated {
+        color: $white-color;
+        border-radius: 1rem;
+        background-color: $primary-color;
+
+        .icon {
+          path,
+          rect {
+            fill: $white-color;
+          }
+        }
+      }
+
+      .btnContainer {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.7rem;
+        cursor: pointer;
+
+        &.itemActivated {
+          button {
+            color: $white-color;
+          }
+        }
+
+        .item {
+          width: auto;
+          margin-bottom: 0;
+        }
+
+        .notifyDot {
+          width: 1rem;
+          height: 1rem;
+          border-radius: 50%;
+          transform: translateY(20%);
+        }
+      }
+    }
+
+    .bottomList {
+      margin-top: 5rem;
+
+      .bottomBtn {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import "../../styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+
+  .header {
+    .subText {
+      font-style: italic;
+      margin-left: 0.3rem;
+    }
+  }
+
+  .chooseImgBtn {
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    color: $white-color;
+    background-color: $light-yellow-color;
+
+    .chooseImgIcon {
+      margin-right: 0.5rem;
+
+      path {
+        fill: $white-color;
+      }
+    }
+  }
+
+  .imgsList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    background-color: $white-color;
+    border: solid 0.2rem $border-color;
+
+    .imgItem {
+      width: 10rem;
+      height: 10rem;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .uploadImgInput {
+    display: none;
+  }
+}

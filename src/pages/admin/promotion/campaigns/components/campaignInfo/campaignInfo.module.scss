@@ -1,0 +1,39 @@
+@import "../../../../../../styles/variables";
+
+.container {
+  padding: 1rem;
+  border-radius: 2rem;
+  background: #fff;
+  box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25),
+    0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .content {
+    .section {
+      margin-bottom: 1rem;
+
+      .label {
+        display: inline-block;
+        margin-right: 0.5rem;
+      }
+
+      .text {
+        color: $primary-color;
+      }
+    }
+  }
+  .code {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $orange-color;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    background-color: $border-color;
+  }
+}

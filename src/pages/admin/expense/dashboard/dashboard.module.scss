@@ -1,0 +1,22 @@
+@import "../../../../styles/variables";
+
+.container {
+  .content {
+    .partOne {
+      .blockSection {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .partTwo {
+      display: flex;
+      margin: 2rem 0;
+    }
+
+    .partThree {
+      .partThreeChild {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

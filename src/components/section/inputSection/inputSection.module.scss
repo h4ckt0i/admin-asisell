@@ -1,0 +1,6 @@
+@import "../../../styles/variables";
+
+.disabled {
+  background-color: $disabled-color !important;
+  border-color: $disabled-color !important;
+}

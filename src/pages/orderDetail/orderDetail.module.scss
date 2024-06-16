@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+
+.products {
+  .productsList {
+    .productsItem {
+      border-bottom: solid 0.1rem $border-color;
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
+
+.recipientDetail {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    line-height: 1.5;
+  }
+}
