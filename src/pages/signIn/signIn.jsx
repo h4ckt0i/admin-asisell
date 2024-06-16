@@ -36,7 +36,7 @@ function SignIn() {
 
   const handleLogin = () => {
     const getAdmin = () =>
- 
+      fetchApi(adminSlice.getAdminByUserName(userName), dispatch);
 
     setIsLoading(true);
     setIsDisabled(true);
@@ -46,8 +46,13 @@ function SignIn() {
         const admin = result[0];
 
         if (admin) {
-          if (admin) {
-           
+          if (admin.password === password) {
+            const { password, admin_type, level, ...rest } = admin;
+            const type = level.type;
+
+            if (type === "warehouse") {
+              sessionStorage.setItem("admin", JSON.stringify(rest));
+
               navigate("/admin");
             } else {
               setIsPermitted(true);
