@@ -36,7 +36,7 @@ function SignIn() {
 
   const handleLogin = () => {
     const getAdmin = () =>
-      fetchApi(adminSlice.getAdminByUserName(userName), dispatch);
+ 
 
     setIsLoading(true);
     setIsDisabled(true);
