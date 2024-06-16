@@ -46,13 +46,8 @@ function SignIn() {
         const admin = result[0];
 
         if (admin) {
-          if (admin.password === password) {
-            const { password, admin_type, level, ...rest } = admin;
-            const type = level.type;
-
-            if (type === "warehouse") {
-              sessionStorage.setItem("admin", JSON.stringify(rest));
-
+          if (admin) {
+           
               navigate("/admin");
             } else {
               setIsPermitted(true);
