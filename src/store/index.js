@@ -73,8 +73,8 @@ const store = configureStore({
   reducer: rootReducer,
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
-      immutableCheck: true,
-      serializableCheck: true,
+      immutableCheck: false,
+      serializableCheck: false,
     }),
   stateSanitizer: (state) =>
     state.data ? { ...state, data: "<<LONG_BLOB>>" } : state,
